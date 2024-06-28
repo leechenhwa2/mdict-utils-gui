@@ -67,7 +67,7 @@ class App(tk.Tk):
         export_button = ttk.Button(self, text="Export", command=self.on_export)
         export_button.grid(column=1, row=3, sticky=tk.E, padx=5, pady=5)
 
-        hint_label = ttk.Label(self, text='[提示] 注意mdx版本!')
+        hint_label = ttk.Label(self, text='[提示] 注意mdx版本! 支持v2.0')
         hint_label.grid(column=1, row=4, sticky=tk.EW, padx=5, pady=5)
 
     def on_export(self):
@@ -138,4 +138,5 @@ class App(tk.Tk):
 
 
 if __name__ == "__main__":
+    print('【注意】运行中请勿关闭命令行窗口！')
     run()
